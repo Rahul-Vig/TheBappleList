@@ -2,13 +2,8 @@ $(".results").hide();
 $("#category-text").hide();
 $(".btn-c").hide();
 $(".dd").hide();
+AOS.init();
 
-let backgroundArray = [
-  "../images/background1.jpg",
-  "../images/background2.jpg",
-  "../images/background3.jpg",
-  "../images/background4.jpg"
-];
 let city = "New York";
 let satrtDate;
 let endDate;
@@ -23,6 +18,8 @@ let queryURLWeather =
   city +
   "&units=imperial&appid=" +
   APIkeyWeather;
+
+//NEWS Display API
 
 $.ajax({
   url: queryURLNews,
@@ -58,6 +55,8 @@ $.ajax({
   }
 });
 
+// Weather display API
+
 $.ajax({
   url: queryURLWeather,
   method: "GET"
@@ -81,6 +80,36 @@ $.ajax({
   $("#weather").append(temperatureAndCity);
 });
 
+//Granim library
+let granimInstance = new Granim({
+  element: "#canvas-image-blending",
+  direction: "top-bottom",
+  isPausedWhenNotInView: true,
+  image: {
+    source: "./assets/images/header_top.jpg",
+    position: ["center", "top"],
+    stretchMode: ["stretch-if-bigger", "stretch-if-bigger"],
+    blendingMode: "multiply"
+  },
+  states: {
+    "default-state": {
+      gradients: [
+        ["#29323c", "#485563"],
+        ["#FF6B6B", "#556270"],
+        ["#c9eafb", "#7ea0c4"],
+        ["#f0ab51", "#eceba3"]
+      ],
+      transitionSpeed: 10000
+    }
+  }
+});
+
+granimInstance.play();
+let ctx = document.getElementById("canvas-image-blending").getContext("2d");
+console.log(ctx);
+ctx.fillStyle = "white";
+ctx.font = "48px";
+ctx.fillText("Hello world", 10, 50);
 function signInExistingUser() {}
 
 function signUpNewUser() {}

@@ -29,10 +29,21 @@ header {
 }
 
 .header {
-  background: url("../images/header_top.jpg");
+  /* background: url("../images/header_top.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   height: 30vh;
+}
+
+#canvas-image-blending {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 30vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 main {
@@ -101,7 +112,13 @@ h1 {
   padding-top: 0px;
   margin-top: 0;
   margin-right: 80px;
-  color: black;
+}
+
+#welcome-fixed {
+  position: absolute;
+  top: 5%;
+  color: #fff;
+  left: 18%;
 }
 
 #indexwelcome {
