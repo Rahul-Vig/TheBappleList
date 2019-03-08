@@ -15,7 +15,7 @@ body {
   height: 100px;
 }
 
-[type=submit] {
+[type="submit"] {
   -webkit-appearance: none;
 }
 
@@ -23,9 +23,15 @@ header {
   height: 20vh;
 }
 
-#logo {
-  width: 300px;
-  height: 300px;
+#start {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+#start:hover {
+  transform: scale(1.5);
 }
 
 .header {
@@ -115,10 +121,10 @@ h1 {
 }
 
 #welcome-fixed {
-  position: absolute;
-  top: 5%;
+  padding-top: 2%;
   color: #fff;
-  left: 18%;
+  font-weight: 500;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #indexwelcome {
@@ -135,11 +141,11 @@ h1 {
 }
 
 #start {
-  margin-top: 50px;
-  opacity: 0.7;
+  margin-top: 0%;
 }
 
-#uptown, #downtown {
+#uptown,
+#downtown {
   height: 70%;
   width: 30%;
   margin-left: 30px;
@@ -185,7 +191,11 @@ h1 {
   margin: 5px;
 }
 
-#email, #pwd, #exampleInputEmail1, #exampleInputPassword1, #exampleInputPassword1 {
+#email,
+#pwd,
+#exampleInputEmail1,
+#exampleInputPassword1,
+#exampleInputPassword1 {
   background: white;
 }
 
@@ -356,7 +366,11 @@ p {
   }
 }
 
-/* #placesList {
+#placesList {
   display: flex;
-  flex-wrap: row wrap;
-} */
+  flex-flow: row wrap;
+}
+
+.carousel-caption {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

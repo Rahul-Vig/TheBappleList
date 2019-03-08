@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>BucketList</title>
+    <title>Places</title>
     <link rel="icon" href="./assets/images/logo.png" />
     <!--Link to AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Bootstrap -->
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -46,33 +47,153 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="./about.html"
+            <a class="nav-link" href="./guestAbout.html"
               >About <span class="sr-only">(current)</span></a
             >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./category.html">Places</a>
-          </li>
           <li class="nav-item active">
-            <a class="nav-link" id="bapple-link" href="#">BappleList</a>
+            <a class="nav-link" href="#">Places</a>
           </li>
         </ul>
-        <button class="btn btn-dark log-out" onclick="logout()">Log Out</button>
       </div>
     </nav>
 
     <main class="main">
       <div class="container white">
         <div class="row">
-          <div class="col-lg-12">
-            <h2>The BappleList</h2>
-            <div id="placesList"></div>
+          <div class="col-lg-9">
+            <div class="row">
+              <!-------Buttons/Category-->
+
+              <div class="col-lg-12">
+                <h3 id="location">Choose your location:</h3>
+                <div><img id="uptown" src="assets/images/uptown.png" /></div>
+                <div><img id="midtown" src="assets/images/midtown.png" /></div>
+                <div>
+                  <img id="downtown" src="assets/images/downtown.png" />
+                </div>
+                <div class="col-lg-12"><div class="results"></div></div>
+                <h3 id="category-text">Choose your Category:</h3>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-dark dropdown-toggle dd"
+                    type="button"
+                    id="drinks"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Drinks
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" id="bars" href="#">Bars</a>
+                    <a class="dropdown-item" id="coffee" href="#">Coffee</a>
+                    <a class="dropdown-item" id="rooftop" href="#">Rooftops</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-dark dropdown-toggle dd"
+                    type="button"
+                    id="Food"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Food
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" id="restaurants" href="#"
+                      >Restaurants</a
+                    >
+                    <a class="dropdown-item" id="desserts" href="#"
+                      >Bakeries/Desserts</a
+                    >
+                    <a class="dropdown-item" id="brunch" href="#">Brunch</a>
+                    <a class="dropdown-item" id="fastfood" href="#"
+                      >Fast Food</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <button id="nightlife" type="button" class="btn btn-dark btn-c">
+                  Nightlife
+                </button>
+              </div>
+              <div class="col-lg-3">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-dark  dropdown-toggle dd"
+                    type="button"
+                    id="Events"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Events
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" id="concerts" href="#">Concerts</a>
+                    <a class="dropdown-item" id="broadway" href="#">Broadway</a>
+                    <a class="dropdown-item" id="sports" href="#">Sports</a>
+                    <a class="dropdown-item" id="entertainment" href="#"
+                      >Entertainment</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <button id="shopping" type="button" class="btn btn-dark btn-c">
+                  Shopping
+                </button>
+              </div>
+              <div class="col-lg-3">
+                <button id="art" type="button" class="btn btn-dark btn-c">
+                  Art/Museums
+                </button>
+              </div>
+              <div class="col-lg-3">
+                <button id="mustsee" type="button" class="btn btn-dark btn-c">
+                  Scenic
+                </button>
+              </div>
+              <div class="col-lg-3">
+                <button id="insta" type="button" class="btn btn-dark btn-c">
+                  Instagram
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="news white">
+              <h3 class="title-style">News</h3>
+              <div id="displayNews"></div>
+            </div>
           </div>
         </div>
       </div>
-    </main>
 
+      <!----Results Div------------------------------------------>
+    </main>
     <aside id="weather" class="btn btn-dark"></aside>
+
     <footer class="footer">
       <h6>Developed by:</h6>
       <div class=" flex-wrap">
@@ -167,7 +288,7 @@
       crossorigin="anonymous"
     ></script>
     <!--JavaScript-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/guest.js"></script>
     <script src="/assets/js/animation.js"></script>
     <!-- Bootstrap -->
     <script

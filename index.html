@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>The Big Apple BucketList</title>
     <link rel="icon" href="./assets/images/logo.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -25,20 +26,17 @@
   <body>
     <header id="indexheader"></header>
     <main>
-      <h1 id="indexwelcome">
-        Welcome to New York
+      <h1 class="display-1" id="indexwelcome">
+        <strong>Welcome to New York</strong>
       </h1>
       <!-- Modal! Login -->
-      <button
-        id="start"
-        type="button"
-        class="btn btn-dark"
+      <img
         data-toggle="modal"
         data-target=".bd-example-modal-lg"
-      >
-        Explore
-      </button>
-      <div><img src="./assets/images/logo.png" alt="logo" id="logo" /></div>
+        src="./assets/images/logo.png"
+        alt="logo"
+        id="start"
+      />
 
       <div
         class="modal fade bd-example-modal-lg"
@@ -75,7 +73,7 @@
 
               <a
                 id="guestEntry"
-                href="about.html"
+                href="guestAbout.html"
                 type="submit"
                 class="btn btn-dark padding"
               >
@@ -97,6 +95,8 @@
     </footer>
 
     <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
