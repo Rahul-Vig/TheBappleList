@@ -165,16 +165,31 @@ $(".btn-c").on("click", function() {
       console.log(data.businesses);
       $(".results").empty();
       for (var i = 0; i < 12; i++) {
-        var imgDiv = $("<div>");
+        let imgDiv = $("<div>");
         let resultDiv = $("<div>");
-
-        var img = $("<img>");
+        imgDiv.addClass("img-sizes");
+        let img = $("<img>");
         img.attr("src", data.businesses[i].image_url);
         img.attr("alt", "food places");
         img.attr("class", "img-fluid");
-        imgDiv.addClass("img-sizes");
-        img.css("padding", "10px");
+
         imgDiv.append(img);
+        // let title = $("<p>").html(data.businesses[i].name);
+        // let address = $("<p>").html(
+        //   data.businesses[i].location.display_address[0] +
+        //     ", " +
+        //     data.businesses[i].location.display_address[1]
+        // );
+        // let phone = $("<p>").html("Call: " + data.businesses[i].phone);
+        // let rating = $("<p>").html(
+        //   "Rating: " + data.businesses[i].rating + " / 5"
+        // );
+        // let btnAdd = $("<button>")
+        //   .attr("class", "btn-sm btn-dark bucketBtn")
+        //   .html("Add to List");
+        // resultDiv.attr("class", "padding");
+        // resultDiv.append(imgDiv, title, address, phone, rating, btnAdd);
+        // $(".results").append(resultDiv);
         resultDiv.append(imgDiv);
         resultDiv.append("<br>");
         resultDiv.append(data.businesses[i].name);
@@ -341,8 +356,6 @@ firebase.auth().onAuthStateChanged(function(user) {
   } else {
   }
 });
-
-// function bucketBtnClick() {}
 
 $(document).on("click", ".bucketBtn", function(event) {
   var element = $(event.target).parent()[0].innerHTML;

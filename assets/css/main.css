@@ -15,6 +15,10 @@ body {
   height: 100px;
 }
 
+[type=submit] {
+  -webkit-appearance: none;
+}
+
 header {
   height: 20vh;
 }
@@ -54,7 +58,11 @@ footer {
 .img-sizes {
   width: 300px;
   height: 300px;
-  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.img-fluid {
+  max-height: 100%;
 }
 
 .container {
@@ -140,7 +148,7 @@ h1 {
 
 .size {
   background: #191e1a;
-  color: black;
+  color: white;
   width: 60%;
   margin: auto;
 }
@@ -282,7 +290,7 @@ p {
 
 .results {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   margin: 5px;
   justify-content: center;
 }
