@@ -7,8 +7,7 @@ AOS.init();
 var element;
 
 let city = "New York";
-let satrtDate;
-let endDate;
+
 let APIkeyNews = "rVruAxBlYzZYu9EleoRs0Vbwvuo0NZ6c";
 let queryURLNews =
   "https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=news_desk:Culture&Arts&Museums&glocations:NEW+YORK+CITY&sort=newest&api-key=" +
