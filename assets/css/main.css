@@ -1,0 +1,323 @@
+body {
+  background: url("../images/background1.jpg");
+  background-size: cover;
+  text-align: center;
+  margin: auto;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+#body {
+  background: rgb(37, 37, 37);
+}
+
+header {
+  height: 20vh;
+}
+
+.header {
+  background: url("../images/header_top.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  height: 60vh;
+}
+
+.main {
+  height: 80%;
+}
+
+footer {
+  height: 20vh;
+  color: #cacacc;
+  opacity: 0.7;
+}
+
+.footer {
+  margin-top: 10px;
+  opacity: 1;
+}
+
+.container {
+  width: 100%;
+  background: rgba(211, 211, 211, 0.582);
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bucketlist {
+  background: #3d4046;
+  height: 65vh;
+  opacity: 0.7;
+}
+
+.log-out {
+  position: absolute;
+  right: 0;
+  margin: 0;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+}
+
+h1 {
+  font-size: 64px;
+  padding: 10px;
+  opacity: 0.7;
+}
+
+#welcome {
+  padding-top: 0px;
+  margin-top: 0;
+  margin-right: 80px;
+  color: black;
+}
+
+#indexwelcome {
+  padding-top: 0px;
+  margin-top: 0;
+  margin-right: 80px;
+  color: black;
+  margin-left: 80px;
+}
+
+#h2 {
+  font-size: 42px;
+  color: white;
+}
+
+#start {
+  margin-top: 50px;
+  opacity: 0.7;
+}
+
+#uptown,
+#downtown {
+  height: 70%;
+  width: 30%;
+  margin-left: 30px;
+}
+
+#midtown {
+  height: 40%;
+  width: 30%;
+  margin-left: 30px;
+}
+
+.btn {
+  opacity: 0.7;
+}
+
+.modal-content {
+  background: #191e1a;
+  color: white;
+  text-align: left;
+  height: 300px;
+  padding: 15px;
+}
+
+.size {
+  background: #191e1a;
+  color: white;
+  width: 60%;
+  margin: auto;
+}
+
+.news {
+  color: white;
+  max-height: calc(100vh - 9rem);
+  overflow-y: auto;
+}
+
+#create {
+  margin: auto;
+  width: 20%;
+}
+
+.padding {
+  margin: 5px;
+}
+
+#email,
+#pwd,
+#exampleInputEmail1,
+#exampleInputPassword1,
+#exampleInputPassword1 {
+  background: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+#login {
+  height: 90%;
+  width: 90%;
+}
+
+button {
+  margin: 10px;
+}
+
+.form {
+  padding: 20px;
+  height: 80%;
+}
+
+.card-body {
+  background: #2a2e32;
+}
+
+.card {
+  background: #2a2e32;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 12px;
+  text-align: left;
+}
+
+.btn-news {
+  width: 70%;
+  height: 30%;
+  font-size: 12px;
+}
+
+.title-style {
+  margin-top: 10px;
+  background: #2a2e32;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.white {
+  color: #cacacc;
+}
+
+#weather {
+  width: 15%;
+  height: 15%;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 4%;
+  margin-right: 1%;
+}
+
+.displayTemp {
+  font-size: 16px;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.developed {
+  font-size: 12px;
+  width: 15%;
+  margin: 30px;
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+p {
+  text-align: left;
+  color: white;
+}
+
+.dark {
+  background: #3d4046;
+}
+
+#copyright {
+  font-size: 12px;
+  margin: 10px;
+  text-align: center;
+}
+
+.img-horizontal {
+  width: 35%;
+  height: 25%;
+}
+
+.img-vertical {
+  width: 30%;
+  height: 45%;
+}
+
+.fixed-width {
+  width: 50%;
+  height: 50%;
+}
+
+.results {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 5px;
+  justify-content: center;
+}
+
+.images {
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 640px) {
+  #indexwelcome {
+    padding-top: 0px;
+    margin-top: 0;
+    margin-right: 80px;
+    color: black;
+    margin-left: 80px;
+    font-size: xx-large;
+  }
+  #weather {
+    width: 20%;
+    height: 20%;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    margin-right: 1%;
+  }
+  #welcome {
+    padding-top: 0px;
+    margin-top: 0;
+    margin-right: 80px;
+    color: black;
+    font-size: xx-large;
+  }
+  #create {
+    margin: auto;
+    width: 50%;
+  }
+  #h2 {
+    font-size: 30px;
+    color: white;
+  }
+  p {
+    text-align: left;
+    color: white;
+    font-size: small;
+  }
+}
+
+/* #placesList {
+  display: flex;
+  flex-wrap: row wrap;
+} */

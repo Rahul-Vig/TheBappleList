@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Category</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Julius+Sans+One"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  </head>
+  <body id="body">
+    <header class="header">
+      <h1 id="welcome">The New York BappleList</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="./index.html">New York</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html"
+              >About <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./category.html">Places</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" id="bapple-link" href="#">BappleList</a>
+          </li>
+        </ul>
+        <button class="btn btn-dark log-out">Log Out</button>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <h2>The BappleList</h2>
+            <div id="placesList"></div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="news white">
+              <h3 class="title-style">News</h3>
+              <div id="displayNews"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <aside id="weather" class="btn btn-dark"></aside>
+
+    <footer class="footer">
+      <h6>Developed by:</h6>
+      <div class=" flex-wrap">
+        <div class="developed">
+          Emma Bixler
+          <br />
+          Front-End Developer
+          <a href="https://www.linkedin.com/in/emma-bixler-73a91b92/"
+            ><img
+              src="./assets/images/linkedIn.png"
+              alt="Linked In"
+              class="icon"
+          /></a>
+          <a href="https://github.com/emmabixler"
+            ><img src="./assets/images/gitHub.png" alt="Git Hub" class="icon"
+          /></a>
+        </div>
+        <div class="developed">
+          Eric Dahan
+          <br />
+          Front-End Developer
+          <a href="https://www.linkedin.com/in/eric-dahan-965176a6/"
+            ><img
+              src="./assets/images/linkedIn.png"
+              alt="Linked In"
+              class="icon"
+          /></a>
+
+          <a href="https://github.com/ericdahan8">
+            <img src="./assets/images/gitHub.png" alt="Git Hub" class="icon"
+          /></a>
+        </div>
+        <div class="developed">
+          Filbert Shi
+          <br />
+          Back-End Developer
+          <a href="https://www.linkedin.com/in/filbert-shi-9a6259178/"
+            ><img
+              src="./assets/images/linkedIn.png"
+              alt="Linked In"
+              class="icon"
+          /></a>
+
+          <a href="https://github.com/Sporego"
+            ><img src="./assets/images/gitHub.png" alt="Git Hub" class="icon"
+          /></a>
+        </div>
+        <div class="developed">
+          Olha Melska
+          <br />
+          Back-End Developer
+          <a href="https://www.linkedin.com/in/olha-melska-685553158/"
+            ><img
+              src="./assets/images/linkedIn.png"
+              alt="Linked In"
+              class="icon"
+          /></a>
+
+          <a href="https://github.com/OlyaMelska"
+            ><img src="./assets/images/gitHub.png" alt="Git Hub" class="icon"
+          /></a>
+        </div>
+        <div class="developed">
+          Rahul Vig
+          <br />
+          Back-End Developer
+          <a href="https://www.linkedin.com/in/rahul-vig-21a459168/"
+            ><img
+              src="./assets/images/linkedIn.png"
+              alt="Linked In"
+              class="icon"
+          /></a>
+
+          <a href="https://github.com/Rahul-Vig"
+            ><img src="./assets/images/gitHub.png" alt="Git Hub" class="icon"
+          /></a>
+        </div>
+      </div>
+      <p id="copyright">copyright &copy; 2019</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <!--JavaScript-->
+    <script src="assets/js/main.js"></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/bucketlist.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Registration</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Julius+Sans+One"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  </head>
+  <body id="body">
+    <header>
+      <header class="header">
+        <h1 id="welcome">Welcome to New York</h1>
+      </header>
+    </header>
+    <br />
+    <form class="form size text-center">
+      <div class="form-group">
+        <label for="nameC">Name</label>
+        <input
+          style="text-align: center;"
+          type="text"
+          class="form-control"
+          id="nameC"
+          aria-describedby="name"
+          placeholder="Enter name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="emailC">Email address</label>
+        <input
+          style="text-align: center;"
+          type="email"
+          class="form-control"
+          id="emailC"
+          aria-describedby="email"
+          placeholder="Enter email"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else. Sike!</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="passC">Create Password</label>
+        <input
+          style="text-align: center;"
+          type="password"
+          class="form-control"
+          id="passC"
+          placeholder="Password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}"
+        />
+      </div>
+      <div class="form-group">
+        <label for="re-entered-pass">Re-enter Password</label>
+        <input
+          style="text-align: center;"
+          type="password"
+          class="form-control"
+          id="re-entered-pass"
+          placeholder="Re-enter Password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}"
+        />
+      </div>
+      <a href="#" type="submit" class="btn btn-dark" id="create"
+        >Create Account</a
+      >
+    </form>
+
+    <aside id="weather" class="btn btn-dark"></aside>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <!--JavaScript-->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
