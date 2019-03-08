@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Category</title>
+    <title>BucketList</title>
+    <link rel="icon" href="./assets/images/logo.png" />
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -22,11 +23,11 @@
   </head>
   <body id="body">
     <header class="header">
-      <h1 id="welcome">The New York BappleList</h1>
+      <h1 id="welcome">Welcome to New York</h1>
     </header>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <a class="navbar-brand" href="./index.html">New York</a>
+      <a class="navbar-brand" href="./index.html">The Big Apple BucketList</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -53,12 +54,12 @@
             <a class="nav-link" id="bapple-link" href="#">BappleList</a>
           </li>
         </ul>
-        <button class="btn btn-dark log-out">Log Out</button>
+        <button class="btn btn-dark log-out" onclick="logout()">Log Out</button>
       </div>
     </nav>
 
     <main class="main">
-      <div class="container">
+      <div class="container white">
         <div class="row">
           <div class="col-lg-9">
             <h2>The BappleList</h2>
@@ -76,14 +77,13 @@
     </main>
 
     <aside id="weather" class="btn btn-dark"></aside>
-
     <footer class="footer">
       <h6>Developed by:</h6>
       <div class=" flex-wrap">
         <div class="developed">
           Emma Bixler
           <br />
-          Front-End Developer
+          Full-Stack Developer
           <a href="https://www.linkedin.com/in/emma-bixler-73a91b92/"
             ><img
               src="./assets/images/linkedIn.png"
@@ -97,7 +97,7 @@
         <div class="developed">
           Eric Dahan
           <br />
-          Front-End Developer
+          Full-Stack Developer
           <a href="https://www.linkedin.com/in/eric-dahan-965176a6/"
             ><img
               src="./assets/images/linkedIn.png"
@@ -105,14 +105,14 @@
               class="icon"
           /></a>
 
-          <a href="https://github.com/ericdahan8">
-            <img src="./assets/images/gitHub.png" alt="Git Hub" class="icon"
+          <a href="#"
+            ><img src="./assets/images/gitHub.png" alt="Git Hub" class="icon"
           /></a>
         </div>
         <div class="developed">
           Filbert Shi
           <br />
-          Back-End Developer
+          Full-Stack Developer
           <a href="https://www.linkedin.com/in/filbert-shi-9a6259178/"
             ><img
               src="./assets/images/linkedIn.png"
@@ -127,7 +127,7 @@
         <div class="developed">
           Olha Melska
           <br />
-          Back-End Developer
+          Full-Stack Developer
           <a href="https://www.linkedin.com/in/olha-melska-685553158/"
             ><img
               src="./assets/images/linkedIn.png"
@@ -142,7 +142,7 @@
         <div class="developed">
           Rahul Vig
           <br />
-          Back-End Developer
+          Full-Stack Developer
           <a href="https://www.linkedin.com/in/rahul-vig-21a459168/"
             ><img
               src="./assets/images/linkedIn.png"
@@ -155,7 +155,9 @@
           /></a>
         </div>
       </div>
-      <p id="copyright">copyright &copy; 2019</p>
+      <p id="copyright">
+        copyright <img src="assets/images/logo.png" class="icon" /> 2019
+      </p>
     </footer>
 
     <!-- jQuery -->
