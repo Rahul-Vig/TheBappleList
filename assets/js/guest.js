@@ -63,7 +63,7 @@ $.ajax({
   url: queryURLWeather,
   method: "GET"
 }).then(function(response) {
-  let temperatureAndCity = $("<p>").text(
+  let temperatureAndCity = $("<p style='text-align: center;'>").text(
     response.name.toUpperCase() + ": " + response.main.temp + "° F "
   );
   temperatureAndCity.attr("class", "displayTemp");
