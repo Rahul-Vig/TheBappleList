@@ -62,7 +62,7 @@ $.ajax({
   url: queryURLWeather,
   method: "GET"
 }).then(function(response) {
-  let temperatureAndCity = $("<p style='text-align:center;'>").text(
+  let temperatureAndCity = $("<p>").text(
     response.name.toUpperCase() + ": " + response.main.temp + "° F "
   );
   temperatureAndCity.attr("class", "displayTemp");
@@ -91,7 +91,6 @@ $("#uptown").on("click", function() {
   $("#uptown").hide();
   $("#downtown").show();
   $("#midtown").show();
-  $(".results").empty();
   loc = "uptown";
 });
 
@@ -103,7 +102,6 @@ $("#midtown").on("click", function() {
   $("#uptown").show();
   $("#downtown").show();
   $("#midtown").hide();
-  $(".results").empty();
   loc = "midtown";
 });
 
@@ -115,7 +113,6 @@ $("#downtown").on("click", function() {
   $("#uptown").show();
   $("#downtown").hide();
   $("#midtown").show();
-  $(".results").empty();
   loc = "downtown";
 });
 

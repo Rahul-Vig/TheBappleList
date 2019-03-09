@@ -1,5 +1,5 @@
 body {
-  background: url("assets/images/background1.jpg");
+  background: url("../images/background1.jpg");
   background-size: cover;
   text-align: center;
   margin: auto;
@@ -7,7 +7,7 @@ body {
 }
 
 #body {
-  background: #191e1a;
+  background: rgb(37, 37, 37);
 }
 
 .logoTop {
@@ -124,7 +124,7 @@ h1 {
   padding-top: 2%;
   color: #fff;
   font-weight: 500;
-  font-size: 80px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #indexwelcome {
@@ -351,9 +351,6 @@ p {
     color: black;
     font-size: xx-large;
   }
-  #welcome-fixed {
-    font-size: xx-large;
-  }
   #create {
     margin: auto;
     width: 50%;
@@ -376,12 +373,4 @@ p {
 
 .carousel-caption {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-#logo-nav {
-  display: none;
-}
-
-#log-out {
-  display: none;
 }
