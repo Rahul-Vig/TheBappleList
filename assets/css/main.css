@@ -351,6 +351,11 @@ p {
     color: black;
     font-size: xx-large;
   }
+
+  #welcome-fixed {
+    font-size: xx-large;
+  }
+
   #create {
     margin: auto;
     width: 50%;
