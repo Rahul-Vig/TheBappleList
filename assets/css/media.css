@@ -1,0 +1,52 @@
+@media only screen and (max-width: 600px) {
+    header {
+        display: none;
+    }
+    #weather {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        margin-left: 4px;
+        font-size: 12px;
+        width: 30%;
+        height: 50px;
+    }
+    .navbar-brand {
+        display: none;
+    }
+    #logo-nav {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+    }
+    .logoTop {
+        display: none;
+    }
+    #log-out {
+        display: inherit;
+        cursor: pointer;
+    }
+    #log-out-btn {
+        display: none;
+    }
+    .hide-weather {
+        display: none;
+    }
+    .modal-content {
+        height: 80%;
+    }
+    #indexwelcome {
+        margin-top: 30px;
+    }
+    #start {
+        margin-top: 10px;
+        width: 100px;
+        height: 100px;
+        transition: transform 0.2s;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .developed {
+        margin: auto;
+    }
+}
