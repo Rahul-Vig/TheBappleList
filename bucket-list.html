@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
   </head>
@@ -28,9 +29,10 @@
       <canvas id="canvas-image-blending"></canvas>
       <h1 id="welcome-fixed" class="display-2">Welcome to New York</h1>
     </header>
-
+    <!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <a class="navbar-brand" href="./index.html">The Big Apple BucketList</a>
+      <a href="./index.html"><img src="./assets/images/logo.png" alt="logo" id="logo-nav" /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -56,12 +58,18 @@
           <li class="nav-item active">
             <a class="nav-link" id="bapple-link" href="#">BappleList</a>
           </li>
-        </ul>
-        <button class="btn btn-dark log-out" onclick="logout()">Log Out</button>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="log-out" onclick="logout()">Log Out</a>
+      </li>
+      </ul>
+      <button onclick="logout()" class="btn btn-dark log-out" id="log-out-btn">
+        Log Out
+      </button>
       </div>
     </nav>
 
-    <main class="main">
+    <main class="main ">
       <div class="container white">
         <div class="row">
           <div class="col-lg-12">
@@ -71,8 +79,8 @@
         </div>
       </div>
     </main>
-
-    <aside id="weather" class="btn btn-dark"></aside>
+<!--Weather aside-->
+    <aside id="weather" class="btn btn-dark hide-weather"></aside>
     <footer class="footer">
       <h6>Developed by:</h6>
       <div class=" flex-wrap">
