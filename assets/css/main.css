@@ -114,6 +114,11 @@ h1 {
   opacity: 0.7;
 }
 
+#bucket {
+  width: 40%;
+  height: 40%;
+}
+
 #welcome {
   padding-top: 0px;
   margin-top: 0;
@@ -124,7 +129,7 @@ h1 {
   padding-top: 2%;
   color: #fff;
   font-weight: 500;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 80px;
 }
 
 #indexwelcome {
@@ -144,8 +149,7 @@ h1 {
   margin-top: 0%;
 }
 
-#uptown,
-#downtown {
+#uptown, #downtown {
   height: 70%;
   width: 30%;
   margin-left: 30px;
@@ -191,11 +195,7 @@ h1 {
   margin: 5px;
 }
 
-#email,
-#pwd,
-#exampleInputEmail1,
-#exampleInputPassword1,
-#exampleInputPassword1 {
+#email, #pwd, #exampleInputEmail1, #exampleInputPassword1, #exampleInputPassword1 {
   background: white;
 }
 
@@ -324,7 +324,16 @@ p {
 
 .images {
   font-size: 13px;
+  width: 250px;
+  height: 250px;
+  /* background: #2a2e32;
+  margin: 2px; */
 }
+
+/* .divImg {
+  background: #191e1a;
+  margin: 2px;
+} */
 
 @media only screen and (max-width: 640px) {
   #indexwelcome {
@@ -373,4 +382,5 @@ p {
 
 .carousel-caption {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #cacacc
 }

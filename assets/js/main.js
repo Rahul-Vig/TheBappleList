@@ -139,26 +139,28 @@ $(".btn-c").on("click", function() {
       $(".results").empty();
       for (var i = 0; i < 12; i++) {
         var imgDiv = $("<div>");
+        let resultDiv = $("<div>");
         imgDiv.addClass("images");
         var img = $("<img>");
         img.attr("src", data.businesses[i].image_url);
         img.attr("alt", "food places");
-        img.css("width", "250px");
-        img.css("height", "250px");
+        img.attr("class", "img-fluid");
         img.css("padding", "10px");
         imgDiv.append(img);
-        imgDiv.append("<br>");
-        imgDiv.append(data.businesses[i].name);
-        imgDiv.append(
+        resultDiv.addClass("divImg");
+        resultDiv.append(imgDiv);
+        resultDiv.append("<br>");
+        resultDiv.append(data.businesses[i].name);
+        resultDiv.append(
           "<br>" + data.businesses[i].location.display_address[0] + "<br>"
         );
-        imgDiv.append(data.businesses[i].location.display_address[1]);
-        imgDiv.append("<br>Call: " + data.businesses[i].phone);
-        imgDiv.append("<br>Rating: " + data.businesses[i].rating + "/5");
-        imgDiv.append(
+        resultDiv.append(data.businesses[i].location.display_address[1]);
+        resultDiv.append("<br>Call: " + data.businesses[i].phone);
+        resultDiv.append("<br>Rating: " + data.businesses[i].rating + "/5");
+        resultDiv.append(
           "<br><button class='btn-sm btn-dark bucketBtn'> Add to List </button>"
         );
-        $(".results").append(imgDiv);
+        $(".results").append(resultDiv);
       }
     }
   });
@@ -187,26 +189,28 @@ $(".dropdown-item").on("click", function() {
       $(".results").empty();
       for (var i = 0; i < 12; i++) {
         var imgDiv = $("<div>");
+        let resultDiv = $("<div>");
         imgDiv.addClass("images");
         var img = $("<img>");
         img.attr("src", data.businesses[i].image_url);
         img.attr("alt", "food places");
-        img.css("width", "250px");
-        img.css("height", "250px");
+        img.attr("class", "img-fluid");
         img.css("padding", "10px");
         imgDiv.append(img);
-        imgDiv.append("<br>");
-        imgDiv.append(data.businesses[i].name);
-        imgDiv.append(
+        resultDiv.addClass("divImg");
+        resultDiv.append(imgDiv);
+        resultDiv.append("<br>");
+        resultDiv.append(data.businesses[i].name);
+        resultDiv.append(
           "<br>" + data.businesses[i].location.display_address[0] + "<br>"
         );
-        imgDiv.append(data.businesses[i].location.display_address[1]);
-        imgDiv.append("<br>Call: " + data.businesses[i].phone);
-        imgDiv.append("<br>Rating: " + data.businesses[i].rating + "/5");
-        imgDiv.append(
+        resultDiv.append(data.businesses[i].location.display_address[1]);
+        resultDiv.append("<br>Call: " + data.businesses[i].phone);
+        resultDiv.append("<br>Rating: " + data.businesses[i].rating + "/5");
+        resultDiv.append(
           "<br><button class='btn-sm btn-dark bucketBtn'> Add to List </button>"
         );
-        $(".results").append(imgDiv);
+        $(".results").append(resultDiv);
       }
     }
   });
@@ -359,7 +363,8 @@ $(document).on("click", ".bucketItem", function(event) {
   );
   // .child("places")
   // .equalTo($(event.target).parent()[0].innerHTML);
-
+  $("#bucketImg").remove();
+  console.log("BUCKET", $("#bucketImg"));
   console.log(placeRef);
 
   placeRef.remove();
