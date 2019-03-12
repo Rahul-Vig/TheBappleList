@@ -10,10 +10,10 @@ Firebase,
 Bootstrap,
 Ajax,
 Granim.js,
-Axios,
+Axios
 
 # API's
 New York Times API,
 Open Weather API,
-Yelp Fusion API,
+Yelp Fusion API
 
