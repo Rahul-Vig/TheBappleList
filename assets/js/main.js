@@ -270,8 +270,12 @@ $("#create").on("click", function() {
               name: currentUser,
               email: email
             });
-
-            window.location.href = "about.html";
+            swal({
+              icon: "success"
+            });
+            setTimeout(function() {
+              window.location.href = "about.html";
+            }, 5000);
           })
           .catch(function(error) {
             // Handle Errors here.
