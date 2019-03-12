@@ -92,6 +92,7 @@ $("#uptown").on("click", function() {
   $("#uptown").hide();
   $("#downtown").show();
   $("#midtown").show();
+  $(".results").empty();
   loc = "uptown";
 });
 
@@ -103,6 +104,7 @@ $("#midtown").on("click", function() {
   $("#uptown").show();
   $("#downtown").show();
   $("#midtown").hide();
+  $(".results").empty();
   loc = "midtown";
 });
 
@@ -114,6 +116,7 @@ $("#downtown").on("click", function() {
   $("#uptown").show();
   $("#downtown").hide();
   $("#midtown").show();
+  $(".results").empty();
   loc = "downtown";
 });
 
