@@ -3,17 +3,17 @@ A local-search service that provides renowned locations, restaurants, drink spot
 
 
 # Technologies
-HTML
-CSS
-JavaScript
-Firebase
-Bootstrap
-Ajax
-Granim.js
-Axios
+HTML,
+CSS,
+JavaScript, 
+Firebase,
+Bootstrap,
+Ajax,
+Granim.js,
+Axios,
 
 # API's
-New York Times API
-Open Weather API
-Yelp Fusion API
+New York Times API,
+Open Weather API,
+Yelp Fusion API,
 
