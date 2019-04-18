@@ -2,6 +2,7 @@
     body {
         background: url("../images/phone-background3.jpg");
         background-size: cover;
+        background-repeat: repeat-y;
     }
     main {
         height: auto;
@@ -23,6 +24,14 @@
         padding-top: 10%;
         color: black;
         font-size: 28px;
+    }
+    #uptown, #midtown, #downtown {
+        width: 55vw;
+    }
+    .arrow-up {
+        width: 15px;
+        height: 15px;
+        margin-bottom: 8px;
     }
     #weather {
         position: absolute;
