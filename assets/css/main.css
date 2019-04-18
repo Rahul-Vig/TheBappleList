@@ -58,6 +58,7 @@ main {
 
 .main {
   height: 80%;
+  min-height: 80vh;
 }
 
 footer {
@@ -121,10 +122,10 @@ h1 {
 }
 
 #welcome-fixed {
-  padding-top: 2%;
+  padding-top: 9%;
   color: #fff;
-  font-weight: 500;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: none;
+  font-size: 72px;
 }
 
 #indexwelcome {
@@ -144,8 +145,7 @@ h1 {
   margin-top: 0%;
 }
 
-#uptown,
-#downtown {
+#uptown, #downtown {
   height: 70%;
   width: 30%;
   margin-left: 30px;
@@ -191,11 +191,7 @@ h1 {
   margin: 5px;
 }
 
-#email,
-#pwd,
-#exampleInputEmail1,
-#exampleInputPassword1,
-#exampleInputPassword1 {
+#email, #pwd, #exampleInputEmail1, #exampleInputPassword1, #exampleInputPassword1 {
   background: white;
 }
 
@@ -255,8 +251,8 @@ button {
 }
 
 #weather {
-  width: 14%;
-  height: 12%;
+  width: 200px;
+  height: 80px;
   color: white;
   position: absolute;
   right: 0;
@@ -271,13 +267,13 @@ button {
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
+  align-content: space-around;
 }
 
 .developed {
   font-size: 12px;
-  width: 15%;
-  margin: 30px;
+  /* width: 15%; */
+  margin: auto;
   text-align: center;
 }
 
@@ -298,6 +294,7 @@ p {
   font-size: 12px;
   margin: 10px;
   text-align: center;
+  opacity: 0.8;
 }
 
 .img-horizontal {
@@ -326,46 +323,6 @@ p {
   font-size: 13px;
 }
 
-@media only screen and (max-width: 640px) {
-  #indexwelcome {
-    padding-top: 0px;
-    margin-top: 0;
-    margin-right: 80px;
-    color: black;
-    margin-left: 80px;
-    font-size: xx-large;
-  }
-  #weather {
-    width: 8%;
-    height: 8%;
-    color: white;
-    position: absolute;
-    right: 0;
-    top: 0%;
-    margin-right: 1%;
-  }
-  #welcome {
-    padding-top: 0px;
-    margin-top: 0;
-    margin-right: 80px;
-    color: black;
-    font-size: xx-large;
-  }
-  #create {
-    margin: auto;
-    width: 50%;
-  }
-  #h2 {
-    font-size: 30px;
-    color: white;
-  }
-  p {
-    text-align: left;
-    color: white;
-    font-size: small;
-  }
-}
-
 #placesList {
   display: flex;
   flex-flow: row wrap;
@@ -386,6 +343,7 @@ p {
   color: #ffffff;
   font-weight: 900;
 }
+
 .swal-button {
   padding: 7px 19px;
   border-radius: 2px;

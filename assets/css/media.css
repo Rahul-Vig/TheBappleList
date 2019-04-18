@@ -1,0 +1,117 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background: url("../images/phone-background3.jpg");
+        background-size: cover;
+    }
+    main {
+        height: auto;
+    }
+    footer {
+        height: auto;
+    }
+    header {
+        display: none;
+    }
+    h6 {
+        font-size: 10px;
+    }
+    .size {
+        width: 90%;
+        margin-top: 10%;
+    }
+    #indexwelcome {
+        padding-top: 10%;
+        color: black;
+        font-size: 28px;
+    }
+    #weather {
+        position: absolute;
+        top: 130px;
+        right: 0;
+        font-size: 12px;
+        width: 150px;
+        height: 80px;
+    }
+    .displayTemp {
+        font-size: 12px;
+    }
+    .media-hide {
+        display: none;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .log-out {
+        position: inherit;
+        font-size: 14px;
+        background: none;
+        border: 0;
+    }
+    .log-out:hover {
+        background: none;
+        border: 0;
+        opacity: 1;
+    }
+    #start {
+        margin-top: 25%;
+        width: 150px;
+        height: 150px;
+        transition: transform 0.2s;
+        font-size: 14px;
+    }
+    .navbar-brand {
+        display: none;
+    }
+    #logo-nav {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+    }
+    .logoTop {
+        display: none;
+    }
+    #log-out {
+        display: inherit;
+        cursor: pointer;
+    }
+    #log-out-btn {
+        display: none;
+    }
+    .media-btn {
+        font-size: 12px;
+    }
+    .developed {
+        font-size: 8px;
+        width: 20%;
+        margin: 10px;
+    }
+    .modal-content {
+        height: 80%;
+    }
+    .developed {
+        margin: auto;
+    }
+    #copyright {
+        margin-top: 2%;
+    }
+    #create {
+        margin: auto;
+        width: 50%;
+    }
+    #h2 {
+        font-size: 30px;
+        color: white;
+    }
+    p {
+        text-align: left;
+        color: white;
+        font-size: small;
+    }
+    .footer {
+        margin-top: 0;
+        padding: 5px;
+    }
+    footer {
+        padding-top: 200px;
+    }
+}

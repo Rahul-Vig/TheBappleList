@@ -21,13 +21,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
   </head>
   <body id="body">
     <header class="header">
       <canvas id="canvas-image-blending"></canvas>
-      <h1 class="display-2" id="welcome-fixed">Welcome to New York</h1>
+      <h1 id="welcome-fixed">Welcome to New York</h1>
     </header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <a class="navbar-brand" href="./index.html">The Big Apple BucketList</a>
@@ -58,8 +59,12 @@
               >BappleList</a
             >
           </li>
+          <li>
+            <button onclick="logout()" class="btn btn-dark log-out">
+              Log Out
+            </button>
+          </li>
         </ul>
-        <button onclick="logout()" class="btn btn-dark log-out">Log Out</button>
       </div>
     </nav>
 
@@ -71,9 +76,6 @@
           <div class="col-lg-12">
             <h2 id="h2">The Big Apple BucketList</h2>
 
-            <div>
-              <img src="./assets/images/logo.png" class="logoTop" alt="logo" />
-            </div>
             <p style="text-align: Center; margin-top: 5px;">
               Boredom's got a new best friend.
             </p>
@@ -141,11 +143,7 @@
           </div>
         </div>
         <div class="row padding">
-          <div
-            class="col-lg-12"
-            data-aos="zoom-out-up"
-            data-aos-duration="2000"
-          >
+          <div class="col-lg-12">
             <div class="bd-example">
               <div
                 id="carouselExampleCaptions"
@@ -276,8 +274,6 @@
               id="carouselExampleSlidesOnly"
               class="carousel slide"
               data-ride="carousel"
-              data-aos="fade-down-right"
-              data-aos-duration="2000"
             >
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -310,8 +306,6 @@
               id="carouselExampleIndicators"
               class="carousel slide"
               data-ride="carousel"
-              data-aos="fade-down-left"
-              data-aos-duration="2000"
             >
               <ol class="carousel-indicators">
                 <li
@@ -500,11 +494,11 @@
       </div>
     </main>
 
-    <aside id="weather" class="btn btn-dark"></aside>
+    <aside id="weather" class="btn btn-dark media-hide"></aside>
 
     <footer class="footer">
       <h6>Developed by:</h6>
-      <div class=" flex-wrap">
+      <div class="flex-wrap">
         <div class="developed">
           Emma Bixler
           <br />
