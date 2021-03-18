@@ -123,7 +123,7 @@ $(".btn-c").on("click", function() {
   console.log($(this).text());
   $(".results").show();
   var myurl =
-    "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" +
+    "https://limitless-woodland-00649.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" +
     $(this).text() +
     "&location=" +
     loc +
@@ -171,7 +171,7 @@ $(".dropdown-item").on("click", function() {
   console.log($(this).text());
   $(".results").show();
   var myurl =
-    "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" +
+    "https://limitless-woodland-00649.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" +
     $(this).text() +
     "&location=" +
     loc +
